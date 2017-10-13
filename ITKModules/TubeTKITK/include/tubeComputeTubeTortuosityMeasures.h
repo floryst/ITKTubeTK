@@ -55,9 +55,6 @@ public:
   typedef itk::tube::TortuositySpatialObjectFilter< TubeType >
     FilterType;
 
-  //typedef typename FilterType::InputImageType       InputImageType;
-  //typedef typename FilterType::OutputImageType      OutputImageType;
-
   /** Method for creation through the object factory. */
   itkNewMacro( Self );
 
@@ -69,7 +66,6 @@ public:
   tubeWrapGetMacro( MeasureFlag, int, Filter );
 
   /* Setter for input tube */
-  /* XXX Should this be ConstObject or Object? */
   tubeWrapSetConstObjectMacro( Input, TubeType, Filter );
 
   /* Getters for metrics */
